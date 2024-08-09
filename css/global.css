@@ -5,12 +5,7 @@ body{
 h1, h2, h3{
     color: #794904 !important;
     font-family:'Montserrat', sans-serif
-}
-.contact-form{
-    background-image: url('../public//img//formContact-min.jpg');
-    object-fit: none;
-    width: 100%;
-}
+}   
 .landing_page_heading{
     font-family:'Montserrat', sans-serif;
     font-weight: 700;
