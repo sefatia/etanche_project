@@ -1,0 +1,33 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+h1, h2, h3{
+    color: #794904 !important;
+    font-family:'Montserrat', sans-serif
+}
+.contact-form{
+    background-image: url('../public//img//formContact-min.jpg');
+    object-fit: none;
+    width: 100%;
+}
+.landing_page_heading{
+    font-family:'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    backdrop-filter: blur(16px) saturate(120%);
+    /* border: 1px solid #ffffff20; */
+    border-radius: 12px;
+}
+.landing_page_description{
+    font-size: 20px;
+    line-height: 1.75;
+    backdrop-filter: blur(16px) saturate(120%);
+    padding-inline: 4px;
+    border-radius: 12px;
+}
+.bg-banner{
+    background-image: url('../public//img//banner.jpg');
+    background-size: cover;
+}

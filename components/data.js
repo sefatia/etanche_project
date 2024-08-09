@@ -5,56 +5,86 @@ import {
   DevicePhoneMobileIcon,
   AdjustmentsHorizontalIcon,
   SunIcon,
+  ListBulletIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../public/img/benefit-one.png";
-import benefitTwoImg from "../public/img/benefit-two.png";
+import etancheTerrasseJardin from "../public/img/etanche_terasse_jardin.jpg";
+import etancheToiture from "../public/img/etanche_toiture.jpg";
+import etancheTerrasse from "../public/img/etanche_terrasse.jpg";
+import piscine from "../public/img/piscine.jpg";
+import missions from "../public/img/missions.jpg";
+import jardinEtancheite from "../public/img/etancheite_jardin.jpg";
+import piscineRealisation from "../public/img/piscine_realisation.jpg";
 
-const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
-  image: benefitOneImg,
-  bullets: [
-    {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
-    },
-    {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
-      icon: <ChartBarSquareIcon />,
-    },
-    {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
-      icon: <CursorArrowRaysIcon />,
-    },
-  ],
-};
+const benefitOne = [
+  {
+    title: "Etanchéité terrasse",
+    desc: "ETANCHE.NE vous offre plusieurs solutions en d’étanchéité pour garantir votre confort et répondre convenablement à vos besoins. Nous maîtrisons très bien :  ",
+    image: etancheTerrasseJardin,
+    description: 'Etanchéité pour terrasse végétalisée',
+    bullets: [
+      {
+        title: "L’étanchéité pour une toiture végétalisée",
+      },
+      {
+        title: "L’étanchéité pour une terrasse accessible, balcon, coursive, escalier, rampe, … ",
+      },
+      {
+        title: "L’étanchéité des toitures avec ou sans isolation thermique",
+      },
+      {
+        title: "L’étanchéité chéneaux ",
+      },
+      {
+        title: "L’étanchéité mur enterré ",
+      },
+    ],
+  },
+  {
+    title: "Piscine",
+    desc: "Qui ne rêve pas d’avoir une piscine chez soi ?....... Nous sommes là pour réaliser vos rêves en matière de construction de piscine ou bien pour une certaine rénovation et réparation.",
+    image: piscine,
+    description: 'Piscine à deux bassins',
+    bullets: [
+    ],
+  },
+  {
+    title: "Bâtiments",
+    desc: " ETANCHE.NE et ses équipes sont ravis d’être à votre service pour des travaux de construction, réhabilitation, rénovation et extension de bâtiments.",
+    image: missions,
+    description: 'Rénovation toiture',
+    bullets: [
+    ],
+  },
+]
 
-const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
-  bullets: [
-    {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
-    },
-    {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
-    },
-    {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
-    },
-  ],
-};
+const dataCarousel = [
+  {
+    title: "SOCIETE AKANJO AMBATOMARO",
+    description: "Etancheite toiture terrasse avec isolation thermique, ayant une surface de 3 000m² effectuée le 28 Juin 2024.",
+    image: etancheTerrasse
+  },
+  {
+    title: "VICTORIA PLAZZA",
+    description: "Etancheite en bardeau, d'une surface de 225m² sur un support en bois, le 22 avril 2024",
+    image: missions
+  },
+  {
+    title: "VILLA DABEZIE",
+    description: "Sur une surface de 75m², ETANCHE.NE a realisé une étanchéité pour une terrasse végétalisée pour un client particulier,le 21 mars 2024 ",
+    image: jardinEtancheite
+  },
+  {
+    title: "PISCINE LOTUS",
+    description: "Une piscine pour l'hotel LOTUS ",
+    image: piscineRealisation
+  },
+  {
+    title: "TRAVAUX DE RENOVATION",
+    description: "Il s'agit des travaux de rénovation de la toiture de l'Institut Pasteur de Madagascar sis à Avaradoha, effectué le 05 février 2024",
+    image: missions
+  },
+  
+]
 
-
-export {benefitOne, benefitTwo};
+export {benefitOne, dataCarousel};
