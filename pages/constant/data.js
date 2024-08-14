@@ -8,15 +8,14 @@ import {
   ListBulletIcon,
 } from "@heroicons/react/24/solid";
 
-import etancheTerrasseJardin from "../public/img/etanche_terasse_jardin.jpg";
-import etancheToiture from "../public/img/etanche_toiture.jpg";
-import etancheTerrasse from "../public/img/etanche_terrasse.jpg";
-import piscine from "../public/img/piscine.jpg";
-import missions from "../public/img/missions.jpg";
-import jardinEtancheite from "../public/img/etancheite_jardin.jpg";
-import piscineRealisation from "../public/img/piscine_realisation.jpg";
+import etancheTerrasseJardin from "../../public/img/etanche_terasse_jardin.jpg";
+import etancheTerrasse from "../../public/img/etanche_terrasse.jpg";
+import piscine from "../../public/img/piscine.jpg";
+import missions from "../../public/img/missions.jpg";
+import jardinEtancheite from "../../public/img/etancheite_jardin.jpg";
+import piscineRealisation from "../../public/img/piscine_realisation.jpg";
 
-const benefitOne = [
+const missionsData = [
   {
     title: "Etanchéité terrasse",
     desc: "ETANCHE.NE vous offre plusieurs solutions en d’étanchéité pour garantir votre confort et répondre convenablement à vos besoins. Nous maîtrisons très bien :  ",
@@ -87,4 +86,13 @@ const dataCarousel = [
   
 ]
 
-export {benefitOne, dataCarousel};
+const contacts = [
+  {
+    icon: 'system-uicons:location',
+    list: [
+      'Lot II E DJ Bis Tsarahonenana ANTANANARIVO 101'
+    ]
+  }
+]
+
+export {missionsData, dataCarousel, contacts};

@@ -20,6 +20,7 @@
   "author": "Surjith S M",
   "license": "ISC",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/css": "^11.10.6",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "^11.10.0",
@@ -33,7 +34,8 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.43.9",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@iconify/react": "^5.0.2",

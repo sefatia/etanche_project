@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Hero from "../components/hero";
 import Navbar from "../components/navbar";
-import { benefitOne, dataCarousel } from "../components/data";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 import ContactForm from "../components/ContactForm"
 import { Carousels } from "../components/carousel";
 import SectionTitle from "../components/sectionTitle";
 import Image from "next/image";
+import { missionsData } from "./constant/data";
 
 const Home = () => {
   return (
@@ -35,7 +35,7 @@ const Home = () => {
           </>)} 
         />
         <div className="bg-[#f8f5f1] ">
-          <Benefits data={benefitOne} />
+          <Benefits data={missionsData} />
         </div>
       </section>
 

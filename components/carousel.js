@@ -7,9 +7,9 @@ import piscine from "../public/img/piscine.jpg";
 import missions from "../public/img/missions.jpg";
 import Image from "next/image";
 import "react-multi-carousel/lib/styles.css";
-import { dataCarousel } from "./data";
 import { useState } from "react";
 import { Modal } from "flowbite-react";
+import { dataCarousel } from "../pages/constant/data";
 
 export function Carousels() {
   const [globalImage, setGlobalImage] = useState(null);
