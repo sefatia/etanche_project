@@ -2,9 +2,6 @@
 "use client";
 
 import Carousel from "react-multi-carousel";
-import etancheTerrasse from "../public/img/etanche_terrasse.jpg";
-import piscine from "../public/img/piscine.jpg";
-import missions from "../public/img/missions.jpg";
 import Image from "next/image";
 import "react-multi-carousel/lib/styles.css";
 import { useState } from "react";

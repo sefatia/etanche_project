@@ -6,7 +6,6 @@ import Footer from "../components/footer";
 import ContactForm from "../components/ContactForm"
 import { Carousels } from "../components/carousel";
 import SectionTitle from "../components/sectionTitle";
-import Image from "next/image";
 import { missionsData } from "../data/data";
 
 const Home = () => {
