@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import Container from "./container";
 
 export default function Footer() {
   const navigation = [
@@ -20,11 +19,11 @@ export default function Footer() {
   ];
   
   return (
-    <div className="relative">
-      <Container>
-        <div className="grid  grid-cols-1 gap-10 pt-10 mx-auto mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <div>
+    <section className="relative ">
+      <section>
+        <div className="w-[82vw] mx-auto grid  grid-cols-1 gap-10 pt-10 mt-5 border-t border-gray-100 dark:border-trueGray-700 lg:grid-cols-5">
+          <div className="lg:col-span-2 ">
+            <div className="">
               {" "}
               <Link href="/" className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <Image
@@ -84,8 +83,8 @@ export default function Footer() {
         <div className="my-2 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()} 
         </div>
-      </Container>
-    </div>
+      </section>
+    </section>
   );
 }
 

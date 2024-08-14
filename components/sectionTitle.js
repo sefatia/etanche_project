@@ -1,9 +1,8 @@
 import React from "react";
-import Container from "./container";
 
 const SectionTitle = (props) => {
   return (
-    <Container
+    <section
       className={`flex w-full flex-col mt-4 ${ 
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}>
@@ -24,7 +23,7 @@ const SectionTitle = (props) => {
           {props.children}
         </p>
       )}
-    </Container>
+    </section>
   );
 }
 

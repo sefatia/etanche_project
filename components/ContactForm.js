@@ -2,13 +2,18 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Image from "next/image"
 import emailjs from "@emailjs/browser";
-import * as KEY_EMAILJS from "../pages/constant/contact";
 import { Loader } from "./loader";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 import { ContactInfo } from "./ContactInfo";
 
 const ContactForm = () => {
+    const KEY_EMAILJS = {
+      serviceId: "service_obhrwrq",
+      templateId: "template_v4tsfqq",
+      publicKey: "iLWriOA1dteI9eJue",
+    }
+
     const {
         register,
         handleSubmit,
@@ -37,22 +42,20 @@ const ContactForm = () => {
         }
       };
     return (
-        <div className="md:flex lg:flex gap-x-3 h-full overflow-auto w-full bg-gray-50  " id="contactForm">
+        <div className="md:flex lg:flex gap-x-3 h-full overflow-auto w-full bg-gray-50  mt-10" id="contactForm">
           <ContactInfo />
 
           <div className="w-full px-4 my-5">
-                <span className="flex justify-center space-x-2 text-2xl font-medium  ">
-                    <Image
-                      src="/img/logo.png"
-                      alt="N"
-                      width="100"
-                      height="50"
-                      className="w-28 mx-8 py-2"
-                    />
-                </span>
-              <div>
-                <h3 className="text-3xl "> Envoie-nous un message</h3>
-              </div>
+              <span className="flex justify-center space-x-2 text-2xl font-medium  ">
+                  <Image
+                    src="/img/logo.png"
+                    alt="N"
+                    width="100"
+                    height="50"
+                    className="w-28 mx-8 py-2"
+                  />
+              </span>
+              
               <form onSubmit={handleSubmit(onSubmit)} noValidate>
                 <div className="mb-4">
                   <label
@@ -188,10 +191,10 @@ const ContactForm = () => {
                     type="submit"
                     className="w-2/3 px-3 py-4 text-white  rounded-md focus:outline-none bg-gradient-to-r from-secondary to-primary">
                     {isSubmitting ? (
-                      <span>
+                      <div className="flex gap-1 justify-center">
                         <Loader />
                         <span>Envoi en cours...</span>
-                      </span>
+                      </div>
                     ) : (
                       "Envoyer le message"
                     )}

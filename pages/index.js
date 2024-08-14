@@ -7,7 +7,7 @@ import ContactForm from "../components/ContactForm"
 import { Carousels } from "../components/carousel";
 import SectionTitle from "../components/sectionTitle";
 import Image from "next/image";
-import { missionsData } from "./constant/data";
+import { missionsData } from "../data/data";
 
 const Home = () => {
   return (
@@ -25,16 +25,16 @@ const Home = () => {
 
       <Hero />
       
-      <section id="noMissions">
+      <section id="noMissions" className="pt-4">
         <SectionTitle title="Nos missions" children={(
           <>
-            <div>
+            <span>
             Afin de faire plus amples connaissances avec notre entreprise, nous vous invitons à découvrir
             le pur professionnalisme, nos spécialités et compétences. 
-            </div>
-          </>)} 
-        />
-        <div className="bg-[#f8f5f1] ">
+            </span>
+          </>)} />
+
+        <div className="bg-[#f8f5f1] mt-14 ">
           <Benefits data={missionsData} />
         </div>
       </section>

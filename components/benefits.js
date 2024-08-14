@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import Container from "./container";
 
 const Benefits = (props) => {
   const { data } = props;
@@ -10,7 +9,7 @@ const Benefits = (props) => {
     <>
      {data.map((benefit, index) => (
 
-       <Container className="flex flex-wrap lg:mb-20 lg:gap-10 lg:flex-nowrap ">
+       <section className="flex flex-wrap lg:mb-20 w-[82vw] mx-auto py-8 lg:gap-10 lg:flex-nowrap " key={index}>
         <div
           className={`flex items-center  justify-center w-full  lg:w-1/2 ${
             index % 2 === 0 ? "" : "order-1 lg:order-2 "
@@ -53,7 +52,7 @@ const Benefits = (props) => {
             </div>
           </div>
         </div>
-       </Container>
+       </section>
      ))}
      
     </>

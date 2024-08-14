@@ -9,7 +9,7 @@ import Image from "next/image";
 import "react-multi-carousel/lib/styles.css";
 import { useState } from "react";
 import { Modal } from "flowbite-react";
-import { dataCarousel } from "../pages/constant/data";
+import { dataCarousel } from "../data/data";
 
 export function Carousels() {
   const [globalImage, setGlobalImage] = useState(null);

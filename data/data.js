@@ -1,21 +1,12 @@
-import {
-  FaceSmileIcon,
-  ChartBarSquareIcon,
-  CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
-  ListBulletIcon,
-} from "@heroicons/react/24/solid";
+import React from "react";
+import etancheTerrasseJardin from "../public/img/etanche_terasse_jardin.jpg";
+import etancheTerrasse from "../public/img/etanche_terrasse.jpg";
+import piscine from "../public/img/piscine.jpg";
+import missions from "../public/img/missions.jpg";
+import jardinEtancheite from "../public/img/etancheite_jardin.jpg";
+import piscineRealisation from "../public/img/piscine_realisation.jpg";
 
-import etancheTerrasseJardin from "../../public/img/etanche_terasse_jardin.jpg";
-import etancheTerrasse from "../../public/img/etanche_terrasse.jpg";
-import piscine from "../../public/img/piscine.jpg";
-import missions from "../../public/img/missions.jpg";
-import jardinEtancheite from "../../public/img/etancheite_jardin.jpg";
-import piscineRealisation from "../../public/img/piscine_realisation.jpg";
-
-export const missionsData = [
+const missionsData = [
   {
     title: "Etanchéité terrasse",
     desc: "ETANCHE.NE vous offre plusieurs solutions en d’étanchéité pour garantir votre confort et répondre convenablement à vos besoins. Nous maîtrisons très bien :  ",
@@ -57,7 +48,7 @@ export const missionsData = [
   },
 ]
 
-export const dataCarousel = [
+const dataCarousel = [
   {
     title: "SOCIETE AKANJO AMBATOMARO",
     description: "Etancheite toiture terrasse avec isolation thermique, ayant une surface de 3 000m² effectuée le 28 Juin 2024.",
@@ -86,11 +77,5 @@ export const dataCarousel = [
   
 ]
 
-export const contacts = [
-  {
-    icon: 'system-uicons:location',
-    list: [
-      'Lot II E DJ Bis Tsarahonenana ANTANANARIVO 101'
-    ]
-  }
-]
+
+export { missionsData, dataCarousel};
