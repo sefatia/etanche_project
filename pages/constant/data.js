@@ -15,7 +15,7 @@ import missions from "../../public/img/missions.jpg";
 import jardinEtancheite from "../../public/img/etancheite_jardin.jpg";
 import piscineRealisation from "../../public/img/piscine_realisation.jpg";
 
-const missionsData = [
+export const missionsData = [
   {
     title: "Etanchéité terrasse",
     desc: "ETANCHE.NE vous offre plusieurs solutions en d’étanchéité pour garantir votre confort et répondre convenablement à vos besoins. Nous maîtrisons très bien :  ",
@@ -57,7 +57,7 @@ const missionsData = [
   },
 ]
 
-const dataCarousel = [
+export const dataCarousel = [
   {
     title: "SOCIETE AKANJO AMBATOMARO",
     description: "Etancheite toiture terrasse avec isolation thermique, ayant une surface de 3 000m² effectuée le 28 Juin 2024.",
@@ -86,7 +86,7 @@ const dataCarousel = [
   
 ]
 
-const contacts = [
+export const contacts = [
   {
     icon: 'system-uicons:location',
     list: [
@@ -94,5 +94,3 @@ const contacts = [
     ]
   }
 ]
-
-export {missionsData, dataCarousel, contacts};

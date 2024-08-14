@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import Image from "next/image"
 import emailjs from "@emailjs/browser";
-import { KEY_EMAILJS } from "../pages/constant/contact";
+import * as KEY_EMAILJS from "../pages/constant/contact";
 import { Loader } from "./loader";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";

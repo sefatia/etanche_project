@@ -4,4 +4,4 @@ const KEY_EMAILJS = {
     templateId: "template_v4tsfqq",
     publicKey: "iLWriOA1dteI9eJue",
 }
-export { KEY_EMAILJS }
+export default KEY_EMAILJS
