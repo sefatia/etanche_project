@@ -1,8 +1,8 @@
 {
-  "name": "nextly-template",
+  "name": "etanche-ne",
   "version": "0.1.0",
-  "description": "Nextly Landing Page Template",
-  "private": true,
+  "description": "Etanche.Ne site vitrine",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/web3templates/nextly-template"
+    "url": "https://github.com/sefatia/etanche_project.git"
   },
   "keywords": [
     "nextjs",
     "tailwindcss",
-    "free"
+    "etanche"
   ],
-  "author": "Surjith S M",
+  "author": "Léone Sefatia",
   "license": "ISC",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
