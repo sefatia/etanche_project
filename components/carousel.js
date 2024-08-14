@@ -13,7 +13,7 @@ import { dataCarousel } from "../pages/constant/data";
 
 export function Carousels() {
   const [globalImage, setGlobalImage] = useState(null);
-  const [openModal, setOpenModal] = useState(true);
+  const [openModal, setOpenModal] = useState(false);
 
   const handleClick = (image, title) => {
     setGlobalImage({image, title});
@@ -41,7 +41,7 @@ export function Carousels() {
           additionalTransfrom={0}
           arrows
           autoPlaySpeed={2000}
-          centerMode={true}
+          centerMode={false}
           className=""
           containerClass="container-with-dots"
           dotListClass=""
@@ -70,7 +70,7 @@ export function Carousels() {
                 min: 0
               },
               items: 1,
-              partialVisibilityGutter: 30
+              partialVisibilityGutter: 0
             },
             tablet: {
               breakpoint: {

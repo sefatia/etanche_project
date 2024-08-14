@@ -12,8 +12,8 @@ const Benefits = (props) => {
 
        <Container className="flex flex-wrap lg:mb-20 lg:gap-10 lg:flex-nowrap ">
         <div
-          className={`flex items-center  justify-center w-full lg:w-1/2 ${
-            index % 2 === 0 ? "order-2" : "order-2 lg:order-1"
+          className={`flex items-center  justify-center w-full  lg:w-1/2 ${
+            index % 2 === 0 ? "" : "order-1 lg:order-2 "
           }`}>
           <div className="w-full">
             <Image
@@ -25,7 +25,7 @@ const Benefits = (props) => {
               placeholder="blur"
               blurDataURL={benefit.image.src}
             />
-            <div className="bg-white shadow ps-1 w-auto py-1 text-primary">{benefit.description}</div>
+            <div className="bg-white shadow ps-1 w-auto lg:w-[400px] py-1 text-primary">{benefit.description}</div>
           </div>
         </div>
 
